@@ -1,0 +1,77 @@
+:root {
+	--colorPrimary: rgb(199, 229, 255);
+}
+
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+
+body {
+	height: 100vh;
+	width: 100vw;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+
+	background-image: url(assets/pexels-spolyakov-11126979.jpg);
+	background-repeat: no-repeat;
+	background-size: cover;
+}
+
+.container {
+	backdrop-filter: blur(1px);
+	display: flex;
+	gap: 8px;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+	padding: 15px 20px;
+	border-radius: 15px;
+	border: solid 1px aliceblue;
+	min-height: 200px;
+}
+
+label {
+	font-size: 32px;
+	color: rgb(49, 65, 78);
+	font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
+#inputCep {
+	text-align: center;
+	border: none;
+	outline: 0;
+	padding: 4px;
+	border-radius: 5px;
+	width: 100%;
+	color: rgb(49, 65, 78);
+	background-color: whitesmoke;
+}
+
+#inputCep:focus {
+	border: none;
+}
+
+#buttonSubmit {
+	text-align: center;
+	padding: 4px;
+	border-radius: 5px;
+	width: 100%;
+	border: solid 1px rgb(199, 229, 255);
+	background-color: rgb(49, 65, 78);
+	color: var(--colorPrimary);
+	font-weight: 500;
+	font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
+#paragrafo {
+	padding: 15px;
+	background-color: whitesmoke;
+	border-radius: 5px;
+	display: none;
+	flex-direction: column;
+	gap: 5px;
+	color: rgb(49, 65, 78);
+}
